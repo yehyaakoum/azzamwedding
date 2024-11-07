@@ -1,117 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azzam Wedding</title>
+    <title>Yehya El Akoum - Personal Website</title>
+    <link rel="icon" href="y.png" type="image/x-icon">
     <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: Arial, sans-serif;
-            color: #fff; /* White text for contrast */
-            background-image: url('azzam.jpg'); /* Replace with the direct URL of the Instagram image */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow-x: hidden;
+            height: 100vh; /* Ensure body takes full height */
         }
 
-        /* Overlay for readability */
-        .overlay {
-            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
-            position: absolute;
+        .video-background {
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 1;
+            z-index: -1; /* Keep video behind content */
+            overflow: hidden;
         }
 
-        /* Center content with overlay */
-        .content-container {
-            position: relative;
-            z-index: 2;
+        iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove iframe border */
+            transform: translate(-50%, -50%); /* Center the video */
+            pointer-events: none; /* Prevent interaction with the video */
         }
 
-        /* Header styling */
-        header {
-            color: #d4af37; /* Gold color for title */
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 3em;
-            font-weight: bold;
-            color: #d4af37;
+        h1 {
+            font-size: 32px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
             margin: 0;
-        }
-
-        /* Main content section */
-        .content {
-            padding: 50px;
+            padding: 0;
+            color: #007bff;
+            padding: 10px 0;
             text-align: center;
-            color: #d4af37;
+            z-index: 1000;
+            position: fixed; /* Fix the title at the top */
+            width: 100%;
+            top: 0;
         }
 
-        .content h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
+        .container {
+            max-width: 800px;
+            margin: 120px auto 20px; /* Adjusted margin top to accommodate the fixed title */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            overflow: hidden;
         }
 
-        .content p {
-            font-size: 1.2em;
-            max-width: 600px;
-            margin: 0 auto;
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            color: #007bff;
+            font-size: 24px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p {
             line-height: 1.6;
         }
 
-        /* Footer styling */
-        footer {
-            padding: 15px;
-            text-align: center;
-            color: #d4af37; /* Gold color for footer text */
+        .profile-pic {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.1);
+        }
+
+        .small-img {
+            display: block;
+            margin: -40px auto 10px; /* Adjusted margin to move the image up */
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .contact-info {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        .contact-info span {
+            display: inline-block;
         }
     </style>
 </head>
+
 <body>
 
-    <!-- Overlay -->
-    <div class="overlay"></div>
+    <div class="video-background">
+        <iframe src="https://www.youtube.com/embed/kwmHaXUAa0M?autoplay=1&mute=1&loop=1&playlist=kwmHaXUAa0M" 
+                allow="autoplay; encrypted-media" 
+                frameborder="0" 
+                allowfullscreen></iframe>
+    </div>
 
-    <!-- Content Container -->
-    <div class="content-container">
+    <h1>Yehya El Akoum</h1>
+
+    <div class="container">
+        <a href="https://www.linkedin.com/in/yehya-el-akoum-455948137/" target="_blank">
+            <img class="profile-pic" src="1730782096030-removebg-preview.png" alt="Profile Picture">
+        </a>
+        <img class="small-img" src="—Pngtree—mouse hand click_5453102.png" alt="Small Image">
+        <p>Solution Expert at Lexzur Company. I work onsite at Dubai Police. I am a results-oriented graduate in Computer Communication Engineering with a strong academic background and hands-on experience in the telecommunications industry. I have demonstrated skills in cabling and jointing, Wi-Fi technologies, VoIP, and smart city solutions.
+
+            I hold certifications in Cisco networking and have a proven track record of successful volunteer work as a paramedic. I am proficient in programming languages such as Python, Java, and C/C++, and I have a solid understanding of MATLAB and networking tools. As a collaborative team player, I possess excellent analytical and problem-solving skills.
+
+            I am fluent in Arabic and proficient in English, with intermediate skills in French.</p>
         
-        <!-- Header Section -->
-        <header>
-            <h1>Azzam Wedding</h1>
-        </header>
+        <h2>Education</h2>
+        <p>
+            <h3>Bachelor’s degree in Computer Communication Engineering with honors</h3>
+            American University of Science and Technology (AUST), Beirut, Lebanon<br>2019 - 2023
+            <h3>Lebanese Baccalaureates in General Sciences</h3>
+            Ranked 1st among the graduating class<br>Aanout High School, Aanout, Lebanon<br>Jul 2018
+        </p>
 
-        <!-- Main Content Section -->
-        <section class="content">
-            <h2>Welcome to Azzam Wedding Planner</h2>
-            <p>
-                At Azzam Wedding, we specialize in creating unforgettable, luxurious weddings. With our expertise
-                and attention to detail, we bring your dream wedding to life with elegance, style, and grandeur.
-            </p>
-            <p>
-                Let us make your special day as enchanting as you've always imagined, with touches of gold and glamour.
-                Explore our services and let us turn your vision into a beautiful reality.
-            </p>
-        </section>
+        <h2>Experience</h2>
+        <p>
+            <h3>Solution Expert <br><a href="https://www.lexzur.com/">Lexzur</a>, Dubai, UAE / Jul 2024 - Present</h3>
+            • Collaboration with Legal Teams: As an IT Solution Expert, collaborated closely with legal professionals at Dubai Police to ensure the smooth integration and operation of technology within legal workflows, with a focus on contract management.<br>
+            • Application Support and Problem Solving: Managed the company’s application, Contra, which is essential for signing and managing contracts. Provided guidance and support to users, addressing issues or errors related to the database, server, or application code.<br>
+            • Workflow Management: Assisted in the workflow cycle for contract approvals, ensuring all necessary signatures were obtained. Facilitated the efficient processing of contracts to meet operational requirements for Dubai Police.
+            <h3>Web Developer - Project Manager <br><a href="https://macrosoftdev.com/">Macrosoftdev</a>, Lebanon / Jan - Apr 2024</h3>
+            • Created comprehensive proposals and contracts for the Abdulbakiaudit project, outlining the scope, deliverables, and terms of the web development project ensuring that all parties involved have a clear understanding of the project requirements and expectations.<br>
+            • Maintained effective communication and regular follow-up with clients, team members, and stakeholders throughout the project lifecycle, ensuring that project milestones were met and addressing any concerns or issues promptly.<br>
+            • Collaborated with web developers and designers to ensure that the website aligned with the client's vision and incorporated best practices in web development, overseeing the implementation of features, functionality, and user experience to deliver a high-quality website.<br>
+            • Hosted the website online and took it live at: <a href="http://abdulbakiaudit.com">abdulbakiaudit.com</a>.
+            <h3>Telecommunication Intern <br><a href="https://www.ogero.gov.lb/">Ogero</a>, Beirut, Bir El Hassan, Lebanon / Jan - Mar 2024</h3>
+            • Developed expertise in diverse aspects of infrastructure deployment, including meticulous cabling and jointing techniques, precise execution of civil works, and proficient installation of cables, both underground and aerial, ensuring optimal network performance and durability.<br>
+            • Demonstrated advanced proficiency in conducting comprehensive OSP electrical tests, meticulously mapping network layouts, implementing effective earthing strategies, and adhering to industry-leading Wi-Fi standards such as 802.11 a/b/g/n, ensuring robust and reliable connectivity across network infrastructure.<br>
+            • Leveraged hands-on experience to configure access points with precision while deepening knowledge in cutting-edge technologies such as DSL, ADSL, VoIP, and SIP protocol. Additionally, gained insight into the integration of smart city technologies, contributing to the development of innovative and interconnected urban environments.<br>
+            • Advanced proficiency in FTTX Network, Fiber Optic Evolution, Topology, and Network Design.
+            <h3>Telecommunication Trainee <br><a href="https://www.ogero.gov.lb/">Ogero</a>, Sidon, Lebanon / Oct - Nov 2021</h3>
+            • Acquired hands-on experience in cabling and jointing, civil works, and installation of cables (underground and aerial).<br>
+            • Gained proficiency in OSP electrical tests, mapping, earthing, and Wi-Fi standards (802.11 a/b/g/n).<br>
+            • Configured access points and gained knowledge in DSL, ADSL, VoIP, SIP protocol, and smart city technologies.
+        </p>
 
-        <!-- Footer Section -->
-        <footer>
-            &copy; 2023 Azzam Wedding Planner. All rights reserved.
-        </footer>
-
+        <h2>Contact Information</h2>
+        <p>
+            <span class="contact-info">
+                <strong>Email:</strong><br>
+                <a href="mailto:yehyaakoum11@gmail.com">yehyaakoum11@gmail.com</a><br>
+                <a href="mailto:yehya.akum@lexzur.com">yehya.akum@lexzur.com</a>
+            </span>
+        </p>
+        <p>
+            <span class="contact-info">
+                <strong>Phone:</strong><br>
+                <a href="tel:+9710557920401">+9710557920401</a><br>
+                <a href="tel:+96103225214">+96103225214</a>
+            </span>
+        </p>
     </div>
 
 </body>
+
 </html>
