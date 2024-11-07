@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azzam Wedding Planner</title>
+    <style>
+        /* Reset some default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            color: #262626;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 600px;
+            background-color: #fff;
+            border-bottom: 1px solid #dbdbdb;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .profile-pic {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .profile-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .username {
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        .follow-btn {
+            margin: 10px 0;
+            padding: 8px 12px;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+
+        .bio {
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 600px;
+            padding: 10px;
+            background-color: #fff;
+            border-bottom: 1px solid #dbdbdb;
+            font-size: 0.9em;
+        }
+
+        .stats .number {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            padding: 10px;
+            max-width: 600px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="profile-info">
+            <img src="profile-pic.jpg" alt="Azzam Wedding Planner Profile Picture" class="profile-pic">
+            <div class="profile-details">
+                <h1 class="username">azzammweddingplanner</h1>
+                <button class="follow-btn">Follow</button>
+                <p class="bio">✨ Bringing your dream wedding to life ✨ <br>Contact us for unique, memorable weddings 🌸</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div>
+            <span class="number">300</span> posts
+        </div>
+        <div>
+            <span class="number">5k</span> followers
+        </div>
+        <div>
+            <span class="number">200</span> following
+        </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="gallery">
+        <div class="gallery-item"><img src="img1.jpg" alt="Gallery Image"></div>
+        <div class="gallery-item"><img src="img2.jpg" alt="Gallery Image"></div>
+        <div class="gallery-item"><img src="img3.jpg" alt="Gallery Image"></div>
+        <div class="gallery-item"><img src="img4.jpg" alt="Gallery Image"></div>
+        <div class="gallery-item"><img src="img5.jpg" alt="Gallery Image"></div>
+        <div class="gallery-item"><img src="img6.jpg" alt="Gallery Image"></div>
+        <!-- Add more images as needed -->
+    </section>
+
+</body>
+</html>
