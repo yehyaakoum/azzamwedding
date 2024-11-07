@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azzam Wedding</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text for contrast */
+        }
+
+        /* Header styling */
+        header {
+            background-color: #333; /* Darker black for header */
+            color: #d4af37; /* Gold color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: bold;
+            color: #d4af37; /* Gold color */
+            margin: 0;
+        }
+
+        /* Main content section */
+        .content {
+            padding: 50px;
+            text-align: center;
+            background-color: #000;
+            color: #d4af37; /* Gold color */
+        }
+
+        .content h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+            color: #d4af37; /* Gold color */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Azzam Wedding</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="content">
+        <h2>Welcome to Azzam Wedding Planner</h2>
+        <p>
+            At Azzam Wedding, we specialize in creating unforgettable, luxurious weddings. With our expertise
+            and attention to detail, we bring your dream wedding to life with elegance, style, and grandeur.
+        </p>
+        <p>
+            Let us make your special day as enchanting as you've always imagined, with touches of gold and glamour.
+            Explore our services and let us turn your vision into a beautiful reality.
+        </p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2023 Azzam Wedding Planner. All rights reserved.
+    </footer>
+
+</body>
+</html>
