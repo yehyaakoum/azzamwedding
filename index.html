@@ -14,14 +14,35 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #000; /* Black background */
             color: #fff; /* White text for contrast */
+            background-image: url('https://via.placeholder.com/1500'); /* Replace with the direct URL of the Instagram image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        /* Overlay for readability */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        /* Center content with overlay */
+        .content-container {
+            position: relative;
+            z-index: 2;
         }
 
         /* Header styling */
         header {
-            background-color: #333; /* Darker black for header */
-            color: #d4af37; /* Gold color */
+            background-color: #333;
+            color: #d4af37;
             padding: 20px;
             text-align: center;
         }
@@ -29,7 +50,7 @@
         header h1 {
             font-size: 3em;
             font-weight: bold;
-            color: #d4af37; /* Gold color */
+            color: #d4af37;
             margin: 0;
         }
 
@@ -37,8 +58,7 @@
         .content {
             padding: 50px;
             text-align: center;
-            background-color: #000;
-            color: #d4af37; /* Gold color */
+            color: #d4af37;
         }
 
         .content h2 {
@@ -58,34 +78,42 @@
             background-color: #333;
             padding: 15px;
             text-align: center;
-            color: #d4af37; /* Gold color */
+            color: #d4af37;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Azzam Wedding</h1>
-    </header>
+    <!-- Overlay -->
+    <div class="overlay"></div>
 
-    <!-- Main Content Section -->
-    <section class="content">
-        <h2>Welcome to Azzam Wedding Planner</h2>
-        <p>
-            At Azzam Wedding, we specialize in creating unforgettable, luxurious weddings. With our expertise
-            and attention to detail, we bring your dream wedding to life with elegance, style, and grandeur.
-        </p>
-        <p>
-            Let us make your special day as enchanting as you've always imagined, with touches of gold and glamour.
-            Explore our services and let us turn your vision into a beautiful reality.
-        </p>
-    </section>
+    <!-- Content Container -->
+    <div class="content-container">
+        
+        <!-- Header Section -->
+        <header>
+            <h1>Azzam Wedding</h1>
+        </header>
 
-    <!-- Footer Section -->
-    <footer>
-        &copy; 2023 Azzam Wedding Planner. All rights reserved.
-    </footer>
+        <!-- Main Content Section -->
+        <section class="content">
+            <h2>Welcome to Azzam Wedding Planner</h2>
+            <p>
+                At Azzam Wedding, we specialize in creating unforgettable, luxurious weddings. With our expertise
+                and attention to detail, we bring your dream wedding to life with elegance, style, and grandeur.
+            </p>
+            <p>
+                Let us make your special day as enchanting as you've always imagined, with touches of gold and glamour.
+                Explore our services and let us turn your vision into a beautiful reality.
+            </p>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            &copy; 2023 Azzam Wedding Planner. All rights reserved.
+        </footer>
+
+    </div>
 
 </body>
 </html>
