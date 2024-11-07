@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azzam Wedding Planner</title>
+    <title>Azzam Wedding</title>
     <style>
-        /* Reset some default styling */
+        /* Basic Reset */
         * {
             margin: 0;
             padding: 0;
@@ -14,91 +14,51 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #fafafa;
-            color: #262626;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text for contrast */
         }
 
+        /* Header styling */
         header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            background-color: #333; /* Darker black for header */
+            color: #d4af37; /* Gold color */
             padding: 20px;
-            width: 100%;
-            max-width: 600px;
-            background-color: #fff;
-            border-bottom: 1px solid #dbdbdb;
+            text-align: center;
         }
 
-        .profile-info {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            max-width: 600px;
-        }
-
-        .profile-pic {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-
-        .profile-details {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .username {
-            font-size: 1.4em;
+        header h1 {
+            font-size: 3em;
             font-weight: bold;
+            color: #d4af37; /* Gold color */
+            margin: 0;
         }
 
-        .follow-btn {
-            margin: 10px 0;
-            padding: 8px 12px;
-            background-color: #0095f6;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.9em;
+        /* Main content section */
+        .content {
+            padding: 50px;
+            text-align: center;
+            background-color: #000;
+            color: #d4af37; /* Gold color */
         }
 
-        .bio {
-            font-size: 0.9em;
-            line-height: 1.4;
+        .content h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
         }
 
-        .stats {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
+        .content p {
+            font-size: 1.2em;
             max-width: 600px;
-            padding: 10px;
-            background-color: #fff;
-            border-bottom: 1px solid #dbdbdb;
-            font-size: 0.9em;
+            margin: 0 auto;
+            line-height: 1.6;
         }
 
-        .stats .number {
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 5px;
-            padding: 10px;
-            max-width: 600px;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            display: block;
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+            color: #d4af37; /* Gold color */
         }
     </style>
 </head>
@@ -106,39 +66,26 @@
 
     <!-- Header Section -->
     <header>
-        <div class="profile-info">
-            <img src="profile-pic.jpg" alt="Azzam Wedding Planner Profile Picture" class="profile-pic">
-            <div class="profile-details">
-                <h1 class="username">azzammweddingplanner</h1>
-                <button class="follow-btn">Follow</button>
-                <p class="bio">✨ Bringing your dream wedding to life ✨ <br>Contact us for unique, memorable weddings 🌸</p>
-            </div>
-        </div>
+        <h1>Azzam Wedding</h1>
     </header>
 
-    <!-- Stats Section -->
-    <section class="stats">
-        <div>
-            <span class="number">300</span> posts
-        </div>
-        <div>
-            <span class="number">5k</span> followers
-        </div>
-        <div>
-            <span class="number">200</span> following
-        </div>
+    <!-- Main Content Section -->
+    <section class="content">
+        <h2>Welcome to Azzam Wedding Planner</h2>
+        <p>
+            At Azzam Wedding, we specialize in creating unforgettable, luxurious weddings. With our expertise
+            and attention to detail, we bring your dream wedding to life with elegance, style, and grandeur.
+        </p>
+        <p>
+            Let us make your special day as enchanting as you've always imagined, with touches of gold and glamour.
+            Explore our services and let us turn your vision into a beautiful reality.
+        </p>
     </section>
 
-    <!-- Image Gallery -->
-    <section class="gallery">
-        <div class="gallery-item"><img src="img1.jpg" alt="Gallery Image"></div>
-        <div class="gallery-item"><img src="img2.jpg" alt="Gallery Image"></div>
-        <div class="gallery-item"><img src="img3.jpg" alt="Gallery Image"></div>
-        <div class="gallery-item"><img src="img4.jpg" alt="Gallery Image"></div>
-        <div class="gallery-item"><img src="img5.jpg" alt="Gallery Image"></div>
-        <div class="gallery-item"><img src="img6.jpg" alt="Gallery Image"></div>
-        <!-- Add more images as needed -->
-    </section>
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2023 Azzam Wedding Planner. All rights reserved.
+    </footer>
 
 </body>
 </html>
